@@ -25,10 +25,10 @@
       <% end %>
     </div>
     <div class="middle aligned column">
-      <div class="ui big button">
-        <i class="signup icon"></i>
-        Sign Up
-      </div>
+      <%= button_to(signup_path, method: :get, class: "ui big button") do %>
+        <%= semantic_icon('signup icon') %>
+        Sign up
+      <% end %>
     </div>
   </div>
   <div class="ui vertical divider">
